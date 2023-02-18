@@ -1,23 +1,5 @@
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
-%	The MIT License (MIT)
-%
-%	Copyright (c) 2021 Jitin Nair
-%
-%	Permission is hereby granted, free of charge, to any person obtaining a copy
-%	of this software and associated documentation files (the "Software"), to deal
-%	in the Software without restriction, including without limitation the rights
-%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%	copies of the Software, and to permit persons to whom the Software is
-%	furnished to do so, subject to the following conditions:
-%	
-%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%	THE SOFTWARE.
-%	
+
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
@@ -26,7 +8,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -79,7 +61,7 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{8pt}{8pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -120,9 +102,10 @@
 \href{mailto:atulpatra27@gmail.com}{\raisebox{-0.05\height} \ atulpatra27@gmail.com} \ $|$ \ 
 \href{tel:+91 7004914344}{\raisebox{-0.05\height}\ +91 7004914344} \\
 
-\href{https://linktr.ee/altxt}{\raisebox{-0.05\height}\ Linktree} \ $|$ \ 
+%\href{https://linktr.ee/altxt}{\raisebox{-0.05\height}\ Linktree} \ $|$ \
+
 \href{https://github.com/flxcsx}{\raisebox{-0.05\height}\ Github} \ $|$ \ 
-\href{https://www.linkedin.com/in/altxt/}{\raisebox{-0.05\height}\ Linkedin} \ $|$ \ 
+\href{https://www.linkedin.com/in/altxt/}{\raisebox{-0.05\height}\ LinkedIn} \ $|$ \ 
 \href{https://codeforces.com/profile/altxt}{\raisebox{-0.05\height} \ Codeforces} \ $|$ \ 
 \href{https://codechef.com/user/altxt}{\raisebox{-0.05\height} \ Codechef} 
 \end{tabularx}
@@ -133,72 +116,93 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-IT student in pre final year with decent knowledge in programming 
+IT professional in making with robust C++ \& python foundations and an eager learner mindset.
 
 %Experience
 \section{Work Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{APPSeCONNECT} & \hfill Sep 2022 - present \\[3.75pt]
+\textbf{APPSeCONNECT} & \hfill Jan 2023 - present \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Intelligent integration platform (iPaaS)
-that connects applications and automates business processes.
-        \item[--] SD Intern in testing systems
+        \item[--] An intelligent integration platform (iPaaS)
+        that connects applications and automates business processes.
+        \item[--] Helped in creating a system using GraphQL for mutating and reading data for client requests from API.
     \end{itemize}
     \end{minipage}
 }
 \end{tabularx}
 
-%\begin{tabularx}{\linewidth}{ @{}l r@{} }
-%\textbf{Tata Motors} & \hfill Upcoming(Jan 2023) \\[3.75pt]
-%\multicolumn{2}{@{}X@{}}{
-%\begin{minipage}[t]{\linewidth}
-%    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-%        \item[--] IT Intern for system management at Tata Motors
-%    \end{itemize}
-%    \end{minipage}
-%}
-%\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Tata Motors} & \hfill Dec 2022\\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Data analytic intern helped in creating and deploying a model to process all  employee complaints regarding workplace safety and use of safety gear in manufacturing line.
+        \item[--] Worked with numpy, tensorflow, matplotlib libraries in python.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
 
 %Projects
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Valorant-rpc} & \hfill {Python} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Feature-rich Discord rich-presence implementation for VALORANT. }  \\
+
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Valorant RPC (Rich Presence) allows users to show in-game details such as the current score in your Discord Profile.
+        \item[--] Helped users see if their friends were online and how long before their match ends with the convenience on not opening the game.
+    \end{itemize}
+    \end{minipage}
+}  
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Stock Price Predictor} & \hfill {Python} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Stock Prediction in Python using the scikit- learn library and plot the graph using the matplotlib library.}  \\
+\textbf{Ray-caster Engine } & \hfill {C++} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Pseudo-3D shooter game written completely in c++ using ray-casting technique.
+        \item[--] Inspired by the classic games like Wolfenstein 3D and Doom.
+    \end{itemize}
+    \end{minipage}
+}  
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Reddit Modmail Bot} & \hfill {Python} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Reddit bot to monitor and alert Mods whenever a new mail is received in the Modmail queue. Helps in managing medium-large subreddit.}  \\
-\end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Professional Gym Website} & \hfill {Html CSS} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{This is a Front End Project which has the use of Navigation Bars,Links, Forms etc.}  \\
+\multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Reddit bot to monitor and alert Mods whenever a new mail is received in the Modmail queue. Helps in managing medium-large subreddit.
+    \end{itemize}
+    \end{minipage}
+}  
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Weather forecasting website} & \hfill {Html CSS} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Similar functionality to my gym website.}  \\
+\multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] This is a Front End Project which has the use of Navigation Bars,Links, Forms etc.
+        \item[--] Used OpenWeatherMap API to get accurate weather data.
+    \end{itemize}
+    \end{minipage}
+}  
 \end{tabularx}
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2020 - Present & B.tech in IT at \textbf{Kalinga Institute Of Industrial Technology}  \\
+2020 - Present & B.tech in IT at \textbf{Kalinga Institute Of Industrial Technology, Bhubaneswar}  \\
 
-2018 - 2020 & AISSCE at \textbf{Sri Chaitanya Educational Institution}\\ 
+2018 - 2020 & AISSCE at \textbf{Sri Chaitanya Educational Institution, Visakhapatnam}\\ 
 
-Start - 2020 & AISSE at\textbf{Vidya Bharti Chinmaya Vidyalaya}  \\
+Start - 2020 & AISSE at\textbf{Vidya Bharti Chinmaya Vidyalaya, Jamshedpur}  \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -213,22 +217,25 @@ Start - 2020 & AISSE at\textbf{Vidya Bharti Chinmaya Vidyalaya}  \\
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 
 \textbf{Programming}\\[3.75pt]
-\multicolumn{2}{@{}X@{}}{C \textbullet{} C++  \textbullet{} Javascript \textbullet{} Python \textbullet{} Solidity \textbullet{} Latex \textbullet{}
-HTML$\backslash$CSS \textbullet{} SQL \textbullet{}
-Powershell \textbullet{} PHP \textbullet{} R }
+\multicolumn{2}{@{}X@{}}{C \textbullet{} C++ \textbullet{} C\# \textbullet{} Javascript \textbullet{} Python \textbullet{} Solidity \textbullet{} Latex \textbullet{} HTML$\backslash$CSS \textbullet{} SQL \textbullet{} Powershell \textbullet{} PHP \textbullet{} R \textbullet{} Rust \textbullet{} Go }
 \end{tabularx}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\textbf{Technology}\\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Git $\backslash$ Github \textbullet{} Excel \textbullet{} MySQl \textbullet{}
-Microsoft Power BI \textbullet{}
-VScode \textbullet{} Bash \textbullet{} Dapps }
+\textbf{Tools \& Technology}\\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Git$\backslash$GitHub \textbullet{} Excel \textbullet{} MySQL \textbullet{} Power BI \textbullet{} VS code \textbullet{} Bash \textbullet{} Dapps \textbullet{} Docker \textbullet{} Vim \textbullet{} Linux \textbullet{} AWS \textbullet{} Bit-bucket\textbullet{} Numpy \textbullet{} Pandas \textbullet{} Tensorflow \textbullet{} Next.js \textbullet{} Three.js \textbullet{} Node.js \textbullet{} Redux \textbullet{} Tailwind CSS \textbullet{} GraphQL \textbullet{} Django \textbullet{} React \textbullet{} Rest}
 \end{tabularx}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\textbf{Coursework}\\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Data Structures and Algorithms \textbullet{} Design and Analysis of Algorithms  \textbullet{} Object Oriented Programming \textbullet{} Data Base Management System \textbullet{} Operating System \textbullet{} Computer Networks \textbullet{} Big Data \textbullet{} Data Mining and Warehousing }
+\textbf{Intrests}\\[3.75pt]
+\multicolumn{2}{@{}X@{}}{DevOps\textbullet{} SEO\textbullet{} Software Development\textbullet{} Data Science\textbullet{} Kubernetes\textbullet{} Machine Vision\textbullet{} Programming }
 \end{tabularx}
 
-\vfill
+\section{Coursework}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+
+
+\multicolumn{2}{@{}X@{}}{Data Structures and Algorithms \textbullet{} Design and Analysis of Algorithms  \textbullet{} Object Oriented Programming \textbullet{} Data Base Management System \textbullet{} Operating System \textbullet{} Computer Networks \textbullet{}
+Big Data \textbullet{} Data Mining and Warehousing \textbullet{} Artificial Intelligence \textbullet{} Machine Learning \textbullet{} }
+\end{tabularx}
+
+%\vfill
 
 \end{document}
-
