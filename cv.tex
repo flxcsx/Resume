@@ -1,15 +1,11 @@
-
 % article class because we want to fully customize the page and not use a cv template
 \documentclass[a4paper,10pt]{article}
-
 %----------------------------------------------------------------------------------------
 %	FONT
 %----------------------------------------------------------------------------------------
-
 % % fontspec allows you to use TTF/OTF fonts directly
 % \usepackage{fontspec}
 % \defaultfontfeatures{Ligatures=TeX}
-
 % % modified for ShareLaTeX use
 % \setmainfont[
 % SmallCapsFont = Fontin-SmallCaps.otf,
@@ -17,34 +13,27 @@
 % ItalicFont = Fontin-Italic.otf
 % ]
 % {Fontin.otf}
-
 %----------------------------------------------------------------------------------------
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
 \usepackage{parskip} 	
-
 %other packages for formatting
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[scale=0.9]{geometry}
-
 %tabularx environment
 \usepackage{tabularx}
-
 %for lists within experience section
 \usepackage{enumitem}
-
 % centered version of 'X' col. type
 \newcolumntype{C}{>{\centering\arraybackslash}X} 
-
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
 \usepackage{tabularx}
 \newlength{\fullcollw}
 \setlength{\fullcollw}{0.47\textwidth}
-
 %custom \section
 \usepackage{titlesec}				
 \usepackage{multicol}
@@ -54,67 +43,52 @@
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{8pt}{8pt}
-
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
-
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \addbibresource{citations.bib}
 \setlength\bibitemsep{1em}
-
 %for social icons
 \usepackage{fontawesome5}
-
 %debug page outer frames
 %\usepackage{showframe}
-
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
 \begin{document}
-
 % non-numbered pages
 \pagestyle{empty} 
-
 %----------------------------------------------------------------------------------------
 %	TITLE
 %----------------------------------------------------------------------------------------
-
 % \begin{tabularx}{\linewidth}{ @{}X X@{} }
 % \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
 % \raisebox{-0.05\height}\faGithub\ username \ | \
 % \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
 % \end{tabularx}
-
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Atul Patra} \\[7.5pt]
 \href{mailto:atulpatra27@gmail.com}{\raisebox{-0.05\height} \ atulpatra27@gmail.com} \ $|$ \ 
 \href{tel:+91 7004914344}{\raisebox{-0.05\height}\ +91 7004914344} \\
-
 %\href{https://linktr.ee/altxt}{\raisebox{-0.05\height}\ Linktree} \ $|$ \
-
 \href{https://github.com/flxcsx}{\raisebox{-0.05\height}\ Github} \ $|$ \ 
 \href{https://www.linkedin.com/in/altxt/}{\raisebox{-0.05\height}\ LinkedIn} \ $|$ \ 
 \href{https://codeforces.com/profile/altxt}{\raisebox{-0.05\height} \ Codeforces} \ $|$ \ 
 \href{https://codechef.com/user/altxt}{\raisebox{-0.05\height} \ Codechef} 
 \end{tabularx}
-
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
-
 %Interests/ Keywords/ Summary
 \section{Summary}
 IT professional in making with robust C++ \& python foundations with an eager learner mindset and interest in game development.
-
 %Experience
 \section{Work Experience}
-
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{APPSeCONNECT} & \hfill Jan 2023 - present \\[3.75pt]
+\textbf{APPSeCONNECT} & \hfill Jan 23 - April 23 \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
@@ -125,22 +99,19 @@ IT professional in making with robust C++ \& python foundations with an eager le
     \end{minipage}
 }
 \end{tabularx}
-
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Tata Technologies} & \hfill Dec 2022\\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Data analytic intern helped in creating and deploying a model to process all  employee complaints regarding workplace safety and use of safety gear in manufacturing line.
+        \item[--] Delved into vast datasets, extracting valuable insights, patterns, and trends. Through visualizations and statistical analysis to process all  employee complaints regarding workplace safety and use of safety gear in manufacturing line.
         \item[--] Worked with numpy, tensorflow, matplotlib libraries in python.
     \end{itemize}
     \end{minipage}
 }
 \end{tabularx}
-
 %Projects
 \section{Projects}
-
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Ray-caster Engine } & \hfill {C++} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
@@ -151,10 +122,8 @@ IT professional in making with robust C++ \& python foundations with an eager le
     \end{minipage}
 }  
 \end{tabularx}
-
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Valorant-rpc} & \hfill {Python} \\[3.75pt]
-
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
@@ -164,19 +133,15 @@ IT professional in making with robust C++ \& python foundations with an eager le
     \end{minipage}
 }  
 \end{tabularx}
-
-
-
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Reddit Modmail Bot} & \hfill {Python} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Reddit bot to monitor and alert Mods whenever a new mail is received in the Modmail queue. Helps in managing medium-large subreddit.
+        \item[--] Reddit bot to monitor and alert Mods whenever a new mail is received in the Modmail queue. Helps in managing medium-large subreddit (banned as of reddit API change[1/7/23])
     \end{itemize}
     \end{minipage}
 }  
 \end{tabularx}
-
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Weather forecasting website} & \hfill {Html CSS} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
@@ -192,24 +157,18 @@ IT professional in making with robust C++ \& python foundations with an eager le
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2020 - Present & B.tech in IT at \textbf{Kalinga Institute Of Industrial Technology, Bhubaneswar}  \\
-
+2020 - 2024 & B.tech in IT at \textbf{Kalinga Institute Of Industrial Technology, Bhubaneswar}  \\
 2018 - 2020 & AISSCE at \textbf{Sri Chaitanya Educational Institution, Visakhapatnam}\\ 
-
-Start - 2020 & AISSE at\textbf{Vidya Bharti Chinmaya Vidyalaya, Jamshedpur}  \\
+Start - 2020 & AISSE at \textbf{Vidya Bharti Chinmaya Vidyalaya, Jamshedpur}  \\
 \end{tabularx}
-
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-
-
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-
 \textbf{Programming}\\[3.75pt]
 \multicolumn{2}{@{}X@{}}{C \textbullet{} C++ \textbullet{} C\# \textbullet{} Javascript \textbullet{} Python \textbullet{} Solidity \textbullet{} Latex \textbullet{} HTML$\backslash$CSS \textbullet{} SQL \textbullet{} Powershell \textbullet{} PHP \textbullet{} R \textbullet{} Rust \textbullet{} Go }
 \end{tabularx}
@@ -219,17 +178,12 @@ Start - 2020 & AISSE at\textbf{Vidya Bharti Chinmaya Vidyalaya, Jamshedpur}  \\
 \end{tabularx}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 \textbf{Intrests}\\[3.75pt]
-\multicolumn{2}{@{}X@{}}{DevOps\textbullet{} SEO\textbullet{} Software Development\textbullet{} Data Science\textbullet{} Kubernetes\textbullet{} Machine Vision\textbullet{} Programming }
+\multicolumn{2}{@{}X@{}}{DevOps\textbullet{} SEO\textbullet{} Software Development\textbullet{} Data Science\textbullet{} Kubernetes\textbullet{} Machine Vision\textbullet{} Programming\textbullet{} Docker }
 \end{tabularx}
-
 \section{Coursework}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-
-
 \multicolumn{2}{@{}X@{}}{Data Structures and Algorithms \textbullet{} Design and Analysis of Algorithms  \textbullet{} Object Oriented Programming \textbullet{} Data Base Management System \textbullet{} Operating System \textbullet{} Computer Networks \textbullet{}
-Big Data \textbullet{} Data Mining and Warehousing \textbullet{} Artificial Intelligence \textbullet{} Machine Learning \textbullet{} }
+Big Data \textbullet{} Data Mining and Warehousing \textbullet{} Artificial Intelligence \textbullet{} Machine Learning }
 \end{tabularx}
-
 %\vfill
-
 \end{document}
